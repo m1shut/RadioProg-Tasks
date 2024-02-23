@@ -5,8 +5,6 @@
 #include <ctime>
 
 using namespace std;
-using deck_type = array<Card, 52>;
-using index_type = deck_type::size_type;
 
 //a)
 enum Rank {
@@ -41,6 +39,9 @@ struct Card {
 	Rank rank{};
 	Suit suit{};
 };
+
+using deck_type = array<Card, 52>;
+using index_type = deck_type::size_type;
 
 void printCard(const Card& card) {
 	switch (card.rank) {

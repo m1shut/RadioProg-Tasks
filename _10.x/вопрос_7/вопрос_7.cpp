@@ -5,8 +5,6 @@
 #include <ctime>
 
 using namespace std;
-using deck_type = array<Card, 52>;
-using index_type = deck_type::size_type;
 
 const int maxResult = 21;
 const int minResult = 17;
@@ -48,6 +46,8 @@ struct Player {
 	int score;
 };
 
+using deck_type = array<Card, 52>;
+using index_type = deck_type::size_type;
 
 void printCard(const Card& card) {
 	switch (card.rank) {
