@@ -3,11 +3,10 @@
 
 using namespace std;
 
-//a)
-
 //b)
 class Monster {
 public:
+    //a)
     enum class Type {
     Dragon,
     Goblin,
@@ -52,7 +51,6 @@ public:
     void print() {
         cout << name << " the " << getTypeString(type) << " has " << health << " hit points and says " << roar << '\n';
     }
-
 };
 
 //f)
@@ -83,18 +81,10 @@ public:
 };
 int main() {
     srand(time(NULL));
-    
-    //srand(time(NULL));
-    /* Monster skeleton{ Monster::Type::Skeleton, "Bones", "*rattle*", 4 };
-    skeleton.print();*/
-
     rand(); 
+    
     Monster m{ MonsterGenerator::generateMonster() };
     m.print();
-
-    
-
-  
 
     return 0;
 }

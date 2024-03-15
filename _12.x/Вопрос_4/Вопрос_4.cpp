@@ -266,68 +266,15 @@ bool playBlackjack(Deck& deck) {
     return (player.score() > dealer.score());
 }
 
-int main()
-{
-    /*auto deck{ createDeck() };
-
-    shuffleDeck(deck);
-
-    if (playBlackjack(deck))
-    {
-        std::cout << "You win!\n";
-    }
-    else
-    {
-        std::cout << "You lose!\n";
-    }*/
-
-    //a)
-    /*const Card cardQueenHearts{ Card::CardRank::RANK_QUEEN, Card::CardSuit::SUIT_HEART };
-    cardQueenHearts.printCard();
-    std::cout << " has the value " << cardQueenHearts.value() << '\n';
-    */
-
-    //b)
-   /* Deck deck{};
-    deck.print();
-    deck.shuffle();
-    deck.print();*/
-    
-    //c)
-   /* Deck deck{};
-
-    deck.shuffle();
-    deck.print();
-
-    std::cout << "The first card has value: " << deck.dealCard().value() << '\n';
-    std::cout << "The second card has value: " << deck.dealCard().value() << '\n';
-    return 0;*/
-
-    //d)
-   /* Deck deck{};
-
-    deck.shuffle();
-    deck.print();
-
-    Player player{};
-    Player dealer{};
-
-    player.drawCard(deck);
-    dealer.drawCard(deck);
-
-    std::cout << "The player drew a card with value: " << player.score() << '\n';
-    std::cout << "The dealer drew a card with value: " << dealer.score() << '\n';*/
-
+int main() {
     Deck deck{};
 
     deck.shuffle();
 
-    if (playBlackjack(deck))
-    {
+    if (playBlackjack(deck)) {
         std::cout << "You win!\n";
     }
-    else
-    {
+    else {
         std::cout << "You lose!\n";
     }
 
