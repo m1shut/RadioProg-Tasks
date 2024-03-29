@@ -13,6 +13,8 @@ Enter the numerator: 5
 Enter the denominator: 0
 Invalid denominator
 
+```
+
 __Ответ:__
 
 [Решение](Вопрос_1/Вопрос_1.cpp)
